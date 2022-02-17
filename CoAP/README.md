@@ -21,11 +21,12 @@ The below instructions can be followed in order to set-up at your end in a span 
 Files will transmit from server to client and save in `/CoAPdata/` folder in the client PC. Moreover, the file `/CoAPdata/time.xlsx` will record the time that each file cost. 
 Modify the variables in coap-client.py to transmit different file for different times.
 
+### Variables in coap-client.py
 filename => Which file we are going to transmit
 
-columns => Store at which column in time.xlsx
+columns => Store at which column in time.xlsx (fiename:columns = 100B:1, 10KB:2, 1MB:3, 10MB:4)
 
-times => transmit the file for how many times
+times => transmit the file for how many times (fiename:times = 100B:10000, 10KB:1000, 1MB:100, 10MB:10)
 
 first row => which row the data will store in time.xlsx (columns:firstROw =  1:A1, 2:B1, 3:C1, 4:D1)
 
