@@ -19,7 +19,9 @@ The below instructions can be followed in order to set-up at your end in a span 
 ```
 4. Run the coap-server.py in terminal.
 
-5. Repeat the 1~3 instructions on another PC or a virtual machine and run coap-client.py in terminal.
+5. Repeat the 1~3 instructions on another PC or a virtual machine.
+
+6. Run the coap-client.py in terminal.
 
 ## How it works
 Files will transmit from server to client and save in `/CoAPdata/` folder in the client PC. Moreover, the file `/CoAPdata/time.xlsx` will record the time that each file cost. 
