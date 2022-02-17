@@ -1,10 +1,8 @@
-#CoAP
-
+# CoAP
 =========
 ![GitHub](https://img.shields.io/badge/Language-Python-blue.svg)
 
-##Setup
-
+## Setup
 -----
 
 The below instructions can be followed in order to set-up at your end in a span of few minutes!
@@ -21,8 +19,7 @@ The below instructions can be followed in order to set-up at your end in a span 
 
 5. Repeat the 1~3 instructions on another PC or a virtual machine and run coap-client.py in terminal.
 
-##How it works
-
+## How it works
 --------------
 
 Files will transmit from server to client and save in `/CoAPdata/` folder in the client PC. Moreover, the file `/CoAPdata/time.xlsx` will record the time that each file cost. 
