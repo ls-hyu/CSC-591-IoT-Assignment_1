@@ -3,13 +3,13 @@
 
 ## Introduction
 
-In this part, we are going to set up one computer as CoAP server and the other as CoAP client. The CoAP server will contain these files on its file system and the CoAP client will request them from the server. Moreover, we will caculate the transmitting time and compare the result with MQTT and HTTP. We will also caculate the total application layer data transferred from sender to receiver per file divided by the file size to measure the overhead. The comparison will record in Results File.xlsx.
+In this part, we are going to set up one computer as CoAP server and the other as CoAP client. The CoAP server will contain these files on its file system and the CoAP client will request them from the server. Moreover, we will caculate the transmitting time and compare the result with MQTT and HTTP. We will also caculate the total application layer data transferred from sender to receiver per file divided by the file size to measure the overhead. The comparison will record in `Results File.xlsx`.
 
 ## Setup
 
 The below instructions can be followed in order to set-up at your end in a span of few minutes!
 
-1. First of all, you need a python3 in you PC
+1. First of all, you need a `python3` in you PC
 
 2. Clone the repository to your local system.
 
