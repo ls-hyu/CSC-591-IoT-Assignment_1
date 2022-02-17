@@ -24,11 +24,11 @@ Modify the variables in coap-client.py to transmit different file for different 
 ### Variables in coap-client.py
 filename => Which file we are going to transmit
 
-columns => Store at which column in time.xlsx (fiename:columns = 100B:1, 10KB:2, 1MB:3, 10MB:4)
+columns => Store at which column in time.xlsx (fiename : columns = 100B : 1, 10KB : 2, 1MB : 3, 10MB : 4)
 
-times => transmit the file for how many times (fiename:times = 100B:10000, 10KB:1000, 1MB:100, 10MB:10)
+times => transmit the file for how many times (filename : times = 100B : 10000, 10KB : 1000, 1MB : 100, 10MB : 10)
 
-first row => which row the data will store in time.xlsx (columns:firstROw =  1:A1, 2:B1, 3:C1, 4:D1)
+first row => which row the data will store in time.xlsx (filename : firstROw =  100B : A1, 10KB : B1, 1MB : C1, 10MB : D1)
 
 
 
