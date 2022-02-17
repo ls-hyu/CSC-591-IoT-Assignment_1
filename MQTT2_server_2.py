@@ -10,14 +10,7 @@ count = 0
 
 def on_message(client, userdata, message):
     try:
-        #global count
-        #count += 1
-        #print(count)
         print("!!!!!!!!!!!!!!!!!!!!!!!")
-        #with open("time.txt", "a") as f:
-        #    f.write("Send: " + str(datetime.now()) + "\n")
-        #client.publish("TEMPERATURE", file, qos=2)
-        #client.loop()
     except:
         traceback.print_exc()
     #print("received message: " ,str(message.payload.decode("utf-8")))
@@ -39,27 +32,10 @@ client.connect(mqttBroker)
 #file = sys.stdin.buffer.read(1024*1024*256)
 file = sys.stdin.buffer.read(1024*1024*256)
 #time.sleep(10)
-"""
-client.subscribe("#", qos=2)
 
-#time.sleep(10)
-with open("time.txt", "a") as f:
-    f.write("Send: " + str(datetime.now()) + "\n")
-client.publish("TEMPERATURE", file, qos=2)
-client.loop()
-
-while count < 50:
-    client.loop_start()
-    client.on_message=on_message
-    client.loop_stop()
-    #print(count)
-    #count += 1
-    #print(count)
-
-"""
 #while True:
-while count < 50000:
-    #time.sleep(10)
+while count < 1:
+    time.sleep(10)
     randNumber = uniform(20.0, 21.0)
     #file = sys.stdin.buffer.read(1024*1024)
 
@@ -76,23 +52,3 @@ while count < 50000:
     print("SENT")
     count += 1
     print(count)
-
-"""
-    with open("time.txt", "a") as f:
-        client.subscribe("#", qos=2)
-        client.publish("TEMPERATURE", file, qos=2)
-        print("SENT")
-        #client.loop()
-        
-        client.loop_start()
-        client.on_message = on_message
-        client.loop_stop()
-        
-        #f.write("Send: " + time.ctime() + "\n")
-        f.write("Send: " + str(datetime.now()) + "\n")
-
-    print(count)
-    count += 1
-    time.sleep(10)
-    #print(packets)
-"""
