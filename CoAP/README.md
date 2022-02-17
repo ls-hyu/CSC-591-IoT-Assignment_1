@@ -31,9 +31,9 @@ filename => Which file we are going to transmit
 
 columns => Store at which column in time.xlsx (fiename : columns = 100B : 1, 10KB : 2, 1MB : 3, 10MB : 4)
 
-times => transmit the file for how many times (filename : times = 100B : 10000, 10KB : 1000, 1MB : 100, 10MB : 10)
+times => Transmit the file for how many times (filename : times = 100B : 10000, 10KB : 1000, 1MB : 100, 10MB : 10)
 
-firstRow => which row the data will store in time.xlsx (filename : firstRow =  100B : A1, 10KB : B1, 1MB : C1, 10MB : D1)
+firstRow => Which row the data will store in time.xlsx (filename : firstRow =  100B : A1, 10KB : B1, 1MB : C1, 10MB : D1)
 
 
 
