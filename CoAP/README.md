@@ -28,7 +28,7 @@ columns => Store at which column in time.xlsx (fiename : columns = 100B : 1, 10K
 
 times => transmit the file for how many times (filename : times = 100B : 10000, 10KB : 1000, 1MB : 100, 10MB : 10)
 
-first row => which row the data will store in time.xlsx (filename : firstROw =  100B : A1, 10KB : B1, 1MB : C1, 10MB : D1)
+firstRow => which row the data will store in time.xlsx (filename : firstRow =  100B : A1, 10KB : B1, 1MB : C1, 10MB : D1)
 
 
 
