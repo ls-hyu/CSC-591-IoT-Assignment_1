@@ -9,13 +9,13 @@ In this part, we are going to set up one computer as CoAP server and the other a
 
 The below instructions can be followed in order to set-up at your end in a span of few minutes!
 
-1. First of all, you need a `python3` in you PC
+1. First of all, you need a `python3` and `pip3` in you PC
 
 2. Clone the repository to your local system.
 
-3. Start a terminal session in the CoAP directory. Run the following command to install the required dependencies:
+3. Start a terminal session in the CoAP directory. Run the following command to install the aiocoap library:
 ```
-  pip install aiocoap
+  pip3 install aiocoap
 ```
 4. Run the coap-server.py in terminal.
 
