@@ -1,5 +1,19 @@
 import math
 
+experiment_file = str(sys.argv[1])
+
+# 傳輸的檔案大小(kilobits)
+kilo_bits = 0
+
+if experiment_file == '100B':
+    kilo_bits = 0.8
+elif experiment_file == '10KB':
+    kilo_bits = 80
+elif experiment_file == '1MB':
+    kilo_bits = 8000
+elif experiment_file == '10MB':
+    kilo_bits = 80000
+
 start = open('start_time.txt', 'r')
 end = open('end_time.txt', 'r')
 
@@ -13,7 +27,6 @@ def stdev(data, total):
     var = variance(data, 0, total)
     std_dev = math.sqrt(var)
     return std_dev
-
 
 while True:
     # Get next line from file
@@ -31,11 +44,10 @@ while True:
 start.close()
 end.close()
 
-# 傳輸的檔案大小(kb)
-file_size_kb = 1000
-
+# 平均（每輪實驗）傳送需花幾秒
+mean_of_each_experiment = sum(intervals) / len(intervals)
 # 傳輸的檔案大小(kb) / 平均（每輪實驗）傳送需花幾秒
-kb_per_sec = file_size_kb / (sum(intervals) / len(intervals))
+kilobits_per_sec = kilo_bits / mean_of_each_experiment
 
-print(f"kb per second: {kb_per_sec}")
-print(f"Standard deviation: {stdev(intervals, kb_per_sec)}")
+print(f"Kilo bits per second: {kilobits_per_sec}")
+print(f"Standard deviation: {stdev(intervals, kilobits_per_sec)}")
