@@ -21,7 +21,7 @@ The below instructions can be followed in order to set-up at your end in a span 
 
 3. On the second computer, run `python3 sub.py file_name transfer_reps` (e.g. python3 sub.py 1MB 100)
 
-4. On the third computer, run `python3 pub.py file_name transfer_reps` (e.g. python3 sub.py 1MB 100)
+4. On the third computer, run `python3 pub.py file_name transfer_reps` (e.g. python3 pub.py 1MB 100)
 
 5. After complete the experiments, put `start_time.txt` and `end_time.txt` to the same directory where calculation.py is.
 
