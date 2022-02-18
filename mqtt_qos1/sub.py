@@ -29,7 +29,7 @@ def on_message(client, userdata, message):
         record_time()
         
 def record_time():
-    f = open("end_time.txt", "a")
+    f = open("end_time.txt", "a+")
     for t in time_records:
         f.write(str(t)+"\n")
     f.close()

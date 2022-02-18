@@ -46,7 +46,7 @@ def run_experiments(client):
         time.sleep(0.5)
 
 def record_time():
-    f = open("start_time.txt", "a")
+    f = open("start_time.txt", "a+")
     for t in time_records:
         f.write(str(t)+"\n")
     f.close()
