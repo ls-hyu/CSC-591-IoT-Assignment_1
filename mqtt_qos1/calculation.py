@@ -19,12 +19,11 @@ end = open('end_time.txt', 'r')
 
 intervals = []
 
-def variance(data, ddof, total):
-    mean = total / len(data)
+def variance(data, ddof, mean):
     return sum((x - mean) ** 2 for x in data) / (len(data) - ddof)
 
-def stdev(data, total):
-    var = variance(data, 0, total)
+def stdev(data, mean):
+    var = variance(data, 0, mean)
     std_dev = math.sqrt(var)
     return std_dev
 
