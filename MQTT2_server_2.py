@@ -4,7 +4,6 @@ import time
 import sys
 from datetime import datetime
 import traceback
-#from scapy.all import *
 
 count = 0
 
@@ -13,27 +12,12 @@ def on_message(client, userdata, message):
         print("!!!!!!!!!!!!!!!!!!!!!!!")
     except:
         traceback.print_exc()
-    #print("received message: " ,str(message.payload.decode("utf-8")))
 
-#mqttBroker ="mqtt.eclipseprojects.io" 
-#mqttBroker = "10.2.1.255"
 mqttBroker = "raspberrypi"
-#mqttBroker = "34.68.50.129"
-#mqttBroker = "34.68.50.129"
-#mqttBroker = "10.2.1.129"
-#mqttBroker = "127.0.0.1"
-#port = 1883
-
-#packets = sniff(filter = "host 127.0.0.1")
-
 client = mqtt.Client("Temperature_Inside")
 client.connect(mqttBroker) 
-#client.connect(mqttBroker, port)
-#file = sys.stdin.buffer.read(1024*1024*256)
 file = sys.stdin.buffer.read(1024*1024*256)
-#time.sleep(10)
 
-#while True:
 while count < 1:
     time.sleep(10)
     randNumber = uniform(20.0, 21.0)
