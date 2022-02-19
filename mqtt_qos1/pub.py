@@ -43,7 +43,7 @@ def run_experiments(client):
     for i in range(experiment_reps):
         time_records.append(time.time())
         publish(client, byte_arr, 1)
-        time.sleep(0.5)
+        time.sleep(0.1)
 
 def record_time():
     f = open("start_time.txt", "a+")
