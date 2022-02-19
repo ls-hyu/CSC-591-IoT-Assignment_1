@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # CSC-591-IoT-Assignment_1
 # MQTT QoS 2
 
@@ -39,4 +37,3 @@ Calculate the transmission time of the packets.
 python Throughput.py
 ```
 > change the last part of the function depending on the file size.
->>>>>>> e7d466b153768dab0616027cae547a7870d6b6fa

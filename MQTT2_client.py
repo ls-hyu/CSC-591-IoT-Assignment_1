@@ -22,7 +22,6 @@ def on_message(client, userdata, message):
     except:
         pass
     file = message.payload
-    
     content = file
     if count <= 1:
         sys.stdout.buffer.write(file)
