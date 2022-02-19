@@ -3,7 +3,7 @@ import statistics as stat
 import numpy as np
 import pandas as pd
 
-f = open("time_10MB.txt", "r")
+f = open("Transmission record/time_10MB.txt", "r")
 lines = f.readlines()
 
 count = 0
@@ -29,11 +29,11 @@ print(time_std)
 time_mean = trans_time.mean()
 print(time_mean)
 
-#print(100/1024/(time_std / np.timedelta64(1, 's')))
-#print(100/1024/(time_mean / np.timedelta64(1, 's')))
-#print(10/(time_std / np.timedelta64(1, 's')))
-#print(10/(time_mean / np.timedelta64(1, 's')))
-#print(1024/(time_std / np.timedelta64(1, 's')))
-#print(1024/(time_mean / np.timedelta64(1, 's')))
-print(10320162/1024/(time_std / np.timedelta64(1, 's')))
-print(10320162/1024/(time_mean / np.timedelta64(1, 's')))
+#print(100*8/1024/(time_std / np.timedelta64(1, 's')))
+#print(100*8/1024/(time_mean / np.timedelta64(1, 's')))
+#print(10*8/(time_std / np.timedelta64(1, 's')))
+#print(10*8/(time_mean / np.timedelta64(1, 's')))
+#print(1024*8/(time_std / np.timedelta64(1, 's')))
+#print(1024*8/(time_mean / np.timedelta64(1, 's')))
+print(10320162*8/1024/(time_std / np.timedelta64(1, 's')))
+print(10320162*8/1024/(time_mean / np.timedelta64(1, 's')))
